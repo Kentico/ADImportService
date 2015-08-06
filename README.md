@@ -1,5 +1,7 @@
 # Kentico AD Import Service
 
+[![Join the chat at https://gitter.im/Kentico/ADImportService](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Kentico/ADImportService?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build status](https://ci.appveyor.com/api/projects/status/jin5kt2gx4co2gre?svg=true)](https://ci.appveyor.com/project/kentico/adimportservice)
 
 Kentico Active Directory Import Service provides real-time import of users and groups from the Active Directory database to users and roles in a Kentico. The service is fully configurable using a configuration file.
