@@ -47,9 +47,16 @@ Here is a sample configuration you can copy to ```configuration.xml``` file.
 </ServiceConfiguration>
 ```
 
-## Disclaimer
+### Common installation issues
 
-Please, understand that Kentico Software does not provide support for this software. It is developed by volunteers and is distributed as it is (see license).
+If you're not able to run the service, make sure that 
+
+- LDAP server is accessible
+- REST service is accessible (try open in your browser ```www.yourdomain.com/rest/cms.user```)
+- Credentials are valid
+- Kentico user is able to modify users and roles
+- Windows user is able to read from AD database
+- Check the Windows Event log and Kentico Event log for error messages
 
 
 ## Acknowledgement
