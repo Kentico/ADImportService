@@ -41,9 +41,12 @@ Here is a sample configuration which you can copy to the ```configuration.xml```
 	SslCertificateLocation="Path to .cer file" />
 	<UserAttributesBindings>
 		<Binding Cms="FullName" Ldap="sAMAccountName" />
+		<Binding Cms="UserGUID" Ldap="objectGUID" />
 	</UserAttributesBindings>
 	<GroupAttributesBindings>
+		<Binding Cms="RoleDisplayName" Ldap="sAMAccountName" />
 		<Binding Cms="RoleDescription" Ldap="description" />
+		<Binding Cms="RoleGUID" Ldap="objectGUID" />
 	</GroupAttributesBindings>
 </ServiceConfiguration>
 ```
