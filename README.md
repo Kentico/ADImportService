@@ -63,3 +63,9 @@ If you're not able to run the service, make sure that
 ## Acknowledgement
 
 The project is based on code developed by [Tomas Hruby](https://github.com/TomHruby) for his [bachelor thesis](https://is.muni.cz/th/396080/fi_b/?furl=%2Fth%2F396080%2Ffi_b%2F;so=nx;lang=en) (full text of the [thesis in pdf](https://is.muni.cz/th/396080/fi_b/thesis.pdf)).
+
+
+## Contributing
+Want to improve the AD Import Service? Great! But make sure you read the [contributing guidelines](https://github.com/Kentico/KInspector/blob/master/CONTRIBUTING.md) first.
+
+If anything feels wrong or incomplete, please let us know. Create a new [issue](https://github.com/Kentico/ADImportService/issues/new) or submit a [pull request](https://help.github.com/articles/using-pull-requests/).
