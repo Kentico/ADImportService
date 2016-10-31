@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/Kentico/ADImportService](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Kentico/ADImportService?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build status](https://ci.appveyor.com/api/projects/status/jin5kt2gx4co2gre?svg=true)](https://ci.appveyor.com/project/kentico/adimportservice)
+[![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
 
 Kentico Active Directory Import Service provides real-time import of users and groups from the Active Directory database to users and roles in Kentico. The service is fully configurable through a configuration file.
 
@@ -40,9 +41,12 @@ Here is a sample configuration which you can copy to the ```configuration.xml```
 	SslCertificateLocation="Path to .cer file" />
 	<UserAttributesBindings>
 		<Binding Cms="FullName" Ldap="sAMAccountName" />
+		<Binding Cms="UserGUID" Ldap="objectGUID" />
 	</UserAttributesBindings>
 	<GroupAttributesBindings>
+		<Binding Cms="RoleDisplayName" Ldap="sAMAccountName" />
 		<Binding Cms="RoleDescription" Ldap="description" />
+		<Binding Cms="RoleGUID" Ldap="objectGUID" />
 	</GroupAttributesBindings>
 </ServiceConfiguration>
 ```
@@ -62,3 +66,9 @@ If you're not able to run the service, make sure that
 ## Acknowledgement
 
 The project is based on code developed by [Tomas Hruby](https://github.com/TomHruby) for his [bachelor thesis](https://is.muni.cz/th/396080/fi_b/?furl=%2Fth%2F396080%2Ffi_b%2F;so=nx;lang=en) (full text of the [thesis in pdf](https://is.muni.cz/th/396080/fi_b/thesis.pdf)).
+
+
+## Contributing
+Want to improve the AD Import Service? Great! But make sure you read the [contributing guidelines](https://github.com/Kentico/KInspector/blob/master/CONTRIBUTING.md) first.
+
+If anything feels wrong or incomplete, please let us know. Create a new [issue](https://github.com/Kentico/ADImportService/issues/new) or submit a [pull request](https://help.github.com/articles/using-pull-requests/).
