@@ -12,7 +12,7 @@ Kentico Active Directory Import Service provides real-time import of users and g
 Assuming that you have Kentico version 8.x installed, follow these steps:
 
 1. Enable REST service in Kentico settings with basic authentication
-2. Download the [ADImportService.exe](https://github.com/Kentico/ADImportService/releases/latest) executable from releases
+2. Download the [ADImportService.exe](https://github.com/Kentico/ADImportService/releases/latest) executable from releases (You might need to unblock it. Right click on `ADImportService.exe`, select properties and click unblock ([screenshot](https://i.imgur.com/ov0mksL.png)).
 3. Open the command line and find the ```InstallUtil``` utility (most likely in ```C:\Windows\Microsoft.NET\Framework64\v4.0.x```
 4. Execute the ```InstallUtil.exe <path to the ADImportService.exe>``` (e.g.: ```InstallUtil.exe C:\ADImportService\ADImportService.exe```) command
 5. Create the ```C:\ProgramData\Kentico AD Import Service\configuration.xml``` file and copy the sample [configuration](#configuration) there
