@@ -71,3 +71,5 @@ The project is based on code developed by [Tomas Hruby](https://github.com/TomHr
 Want to improve the AD Import Service? Great! But make sure you read the [contributing guidelines](https://github.com/Kentico/KInspector/blob/master/CONTRIBUTING.md) first.
 
 If anything feels wrong or incomplete, please let us know. Create a new [issue](https://github.com/Kentico/ADImportService/issues/new) or submit a [pull request](https://help.github.com/articles/using-pull-requests/).
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/ADImportService?pixel)
