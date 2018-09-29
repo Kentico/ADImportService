@@ -101,11 +101,8 @@ namespace Kentico.ADImportService
 
 			if (target.Contains("https://"))
 			{
-				request.ServerCertificateValidationCallback += (sender, certificate, chain, errors) =>
-				{
-					return certificate.Equals(Certificate);
-				};
-			}
+                request.ServerCertificateValidationCallback += ValidateServerCertificate;
+            }
 
 			// Set authorization header
 			var credentials = Convert.ToBase64String(Encoding.GetBytes(string.Format("{0}:{1}", UserName, Password)));
@@ -175,13 +172,13 @@ namespace Kentico.ADImportService
 
 
 		/// <summary>
-		/// Validate certificate.
+		/// Validate server certificate.
 		/// </summary>
 		/// <param name="sender">Event sender.</param>
 		/// <param name="certificate">Certificate.</param>
 		/// <param name="certificateChain">Certificate chain.</param>
 		/// <param name="policyErrors">Returned certificate errors.</param>
-		private static bool ValidateCertificate(object sender, X509Certificate certificate, X509Chain certificateChain, SslPolicyErrors policyErrors)
+		private static bool ValidateServerCertificate(object sender, X509Certificate certificate, X509Chain certificateChain, SslPolicyErrors policyErrors)
 		{
 			// Allow certificate when no errors
 			if (policyErrors == SslPolicyErrors.None)
